@@ -11,8 +11,8 @@ const port = process.env.PORT || 3000;
 const mongoosedb = process.env.MONGO_URI;
 
 app.use(cors({
-  origin: "http://localhost:5173",
-  methods: ["GET", "POST", "PUT", "DELETE"],
+  origin: "https://your-vercel-frontend.vercel.app", 
+  methods: ["GET","POST","PUT","DELETE"]
 }));
 
 app.use(express.json());
@@ -37,3 +37,4 @@ app.get("/home", (req, res) => {
 app.listen(port, () => {
   console.log(`Server started 🚀 on http://localhost:${port}`);
 });
+
