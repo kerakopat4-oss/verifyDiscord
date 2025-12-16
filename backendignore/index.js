@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 const mongoosedb = process.env.MONGO_URI;
 
 app.use(cors({
-  origin: "https://verify-discord-one.vercel.app", 
+  origin: "https://verify-discord-a6vyej2ol-kerakopat4-oss-projects.vercel.app", 
   methods: ["GET","POST","PUT","DELETE"]
 }));
 
@@ -37,6 +37,7 @@ app.get("/home", (req, res) => {
 app.listen(port, () => {
   console.log(`Server started 🚀 on http://localhost:${port}`);
 });
+
 
 
 
