@@ -34,9 +34,10 @@ app.get("/home", (req, res) => {
   res.send("Server working ✅");
 });
 
-app.listen(port, () => {
+app.listen(port, "0.0.0.0" , () => {
   console.log(`Server started 🚀 on http://localhost:${port}`);
 });
+
 
 
 
