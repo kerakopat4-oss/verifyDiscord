@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const signupSchema = new mongoose.Schema(
   {
     discordUserName: { type: String, required: true },
-    discordId: { type: Number, required: true, unique: true },
+    discordId: { type: String, required: true, unique: true },
     email: { type: String, required: true, unique: true },
     otherSocial: { type: String, required: true },
     age: { type: Number, required: true },
@@ -14,3 +14,4 @@ const signupSchema = new mongoose.Schema(
 );
 
 export default mongoose.model("Signup", signupSchema);
+
